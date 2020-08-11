@@ -374,6 +374,7 @@ template {
 .header {
   font-family: Open Sans;
   padding: 26px 0;
+  margin-bottom: 36px;
 }
 
 .header-wrapper {
@@ -705,6 +706,8 @@ template {
   .header {
     padding-top: 26px;
     padding-bottom: 18px;
+    margin-top: 8px;
+    margin-bottom: 30px;
   }
   .header__links {
     display: none;
@@ -781,6 +784,8 @@ template {
   }
   .header {
     padding: 18px 0;
+    margin-top: 0;
+    margin-bottom: 24px;
   }
   .newsletter__title {
     font-size: 28px;
