@@ -25,6 +25,21 @@
   .item-more
     width: 210px
     height: 314px
+  .collection
+    margin-bottom: 80px
+    &-cotainer
+      flex-direction: column
+      max-width: 670px
+    &-left
+      margin: auto
+      margin-bottom: 40px
+    &-right
+      padding: 0
+      &__title
+        margin-bottom: 18px
+      &__text
+        margin-top: 0
+        margin-bottom: 30px
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -261,3 +276,48 @@
     &__text
       font-size: 20px
       line-height: 24px
+  .collection
+    margin-bottom: 64px
+    &-cotainer
+      flex-direction: column
+      width: auto
+    &-left
+      margin: auto
+      margin-bottom: 40px
+      flex-direction: column
+      width: auto
+      margin-bottom: 36px
+      &__first
+        margin-right: 0
+        margin-bottom: 14px
+        &_image
+          width: 290px
+          height: 300px
+      &__second
+        flex-direction: row
+        &_image-1
+          margin-bottom: 0
+          margin-right: 14px
+          width: 138px
+          height: 97px
+        &_image-2
+          width: 138px
+          height: 97px
+    &-right
+      width: 290px
+      margin: auto
+      &__title
+        font-size: 28px
+        line-height: 36px
+        margin-bottom: 16px
+      &__text
+        font-size: 16px
+        line-height: 28px
+        margin-bottom: 24px
+        margin-right: 5px
+        margin-left: 5px
+      &__link
+        margin: auto
+        margin-left: 40px
+        font-size: 16px
+        line-height: 22px

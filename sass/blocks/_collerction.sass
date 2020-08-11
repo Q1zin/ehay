@@ -1,0 +1,75 @@
+.collection
+  margin-bottom: 145px
+  &-cotainer
+    width: 1140px
+    margin: auto
+    display: flex
+  &-left
+    display: flex
+    width: 668px
+    justify-content: space-between
+    &__first
+      margin-right: 30px
+      &_image
+        width: 320px
+        height: 490px
+        border-radius: 8px
+        object-fit: cover
+        overflow: hidden
+    &__second
+      display: flex
+      flex-direction: column
+      align-content: space-between
+      &_image-1
+        width: 320px
+        height: 230px
+        border-radius: 8px
+        object-fit: cover
+        overflow: hidden
+        margin-bottom: 30px
+      &_image-2
+        width: 320px
+        height: 230px
+        border-radius: 8px
+        object-fit: cover
+        overflow: hidden
+  &-right
+    padding: 10px 10px 55px 58px
+    &__title
+      font-family: HK Grotesk
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      color: #183B56
+      margin-top: 0
+      margin-bottom: 24px
+    &__text
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      color: #5A7184
+      margin-bottom: 40px
+    &__link
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+      color: #1565D8
+      text-decoration: none
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: 3px
+        bottom: 0
+        right: -43px
+        background: url('../img/collection-needle.svg') no-repeat
+        width: 13px
+        height: 16px
+        margin: auto 0
