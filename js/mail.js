@@ -18,4 +18,16 @@ $(document).ready(function () {
 		headerHidden.toggleClass("header__menu_main--active")
 		headerHiddenWindow.toggleClass("header__menu_window--active")
 	})
+
+	//Обработка форм
+	$(".newsletter__form").each(function () {
+		$(this).validate({
+			errorClass: "invalid",
+			messages: {
+				email: {
+					required: "Email is required",
+				},
+			},
+		})
+	})
 })
