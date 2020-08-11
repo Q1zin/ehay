@@ -9,6 +9,8 @@
     display: flex
     justify-content: space-between
     align-items: center
+    position: relative
+    outline: 1px res solid
   &__items
     display: flex
     align-items: center
@@ -35,3 +37,13 @@
       color: #ffffff
   &__menu
     display: none
+    &_window
+      display: none
+      opacity: 0
+      transition: 0.2s
+      &--active
+        opacity: 1
+        transition: 0.2s
+        display: block    
+  &__logo
+    z-index: 70 

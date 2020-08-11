@@ -12,8 +12,10 @@ $(document).ready(function () {
 
 	$(".header__menu-block").on("click", function (e) {
 		var headerHidden = $(".header__menu_main")
+		var headerHiddenWindow = $(".menu")
 		e.preventDefault
 		$(this).toggleClass("header__menu-block_active")
 		headerHidden.toggleClass("header__menu_main--active")
+		headerHiddenWindow.toggleClass("header__menu_window--active")
 	})
 })
