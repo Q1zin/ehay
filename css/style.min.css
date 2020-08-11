@@ -1111,7 +1111,6 @@ template {
   .trending-items__wrapper {
     width: 290px;
     margin: auto;
-    transform: translatex(-7px);
   }
   .trending-items__title {
     margin-bottom: 24px;
@@ -1154,13 +1153,13 @@ template {
     height: 170px;
   }
   .item-main:nth-child(1) {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
-  .item-main:nth-child(1):nth-child(3) {
-    margin-bottom: 20px;
+  .item-main:nth-child(3) {
+    margin-bottom: 24px;
   }
-  .item-main:nth-child(1):nth-child(5) {
-    margin-bottom: 20px;
+  .item-main:nth-child(5) {
+    margin-bottom: 24px;
   }
   .item-main__title {
     font-size: 16px;
@@ -1179,6 +1178,17 @@ template {
   .item-more {
     width: 140px;
     height: 170px;
+  }
+  .item-more__wrapper {
+    margin-top: 43px;
+  }
+  .item-more__image {
+    width: 25px;
+    margin-bottom: 22px;
+  }
+  .item-more__text {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 /*# sourceMappingURL=style.min.css.map */
