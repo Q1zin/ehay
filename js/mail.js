@@ -30,4 +30,19 @@ $(document).ready(function () {
 			},
 		})
 	})
+
+	//Инициализация слайдера
+	var swiper = new Swiper(".quotes__container", {
+		initialSlide: 1,
+		spaceBetween: 30,
+		centeredSlides: true,
+		autoplay: {
+			delay: 7000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	})
 })

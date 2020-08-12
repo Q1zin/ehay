@@ -3,12 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="css/style.min.css" />
 		<link rel="stylesheet" href="css/style.css.map" />
 		<link rel="shortcut icon" href="img/favicon.svg" />
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 		<title>Ehay - Home</title>
 	</head>
+
 	<body>
 		<header class="header">
 			<div class="header-container">
@@ -58,7 +60,7 @@
 					<p class="second-header__text">
 						How you can be a Cool People or Fashionista Society. To solve this you should wear a great clothes and updated your style. You can search here. Explore Now!
 					</p>
-					<button href="#" class="second-header__button">Take Exploration</button>
+					<button class="second-header__button">Take Exploration</button>
 					<div class="second-header__info">
 						<div class="second-header__info_first header-first">
 							<img src="img/hand-with-dollar.svg" alt="Icon: hand with dollar" class="header-first__img" />
@@ -366,6 +368,44 @@
 			<!-- /.container -->
 		</div>
 		<!-- /.trending-items -->
+		<div class="quotes">
+			<div class="quotes__container">
+				<div class="swiper-wrapper quotes__wrapper">
+					<div class="swiper-slide quotes__item">
+						<img src="img/quotes__image.svg" alt="Icon: quote" class="quotes__image" />
+						<p class="quotes__text">
+							"We are ipsum dolor sit amet consectetur, adipisicing elit. Natus autem incidunt excepturi nihil harum numquam ab perspiciatis, expedita voluptates blanditiis ipsa inventore voluptate
+							labore amet, officiis non saepe corrupti ad. Maiores, sequi rem! Velit officia hic atque nisi non quam voluptatem adipisci.”
+						</p>
+						<span class="quotes__span"><span class="quotes__span_dah">- </span>Maiores Voluptates - <br class="quotes__span_br" />Sequi Corrupti</span>
+					</div>
+					<!-- /.quotes__item -->
+					<div class="swiper-slide quotes__item">
+						<img src="img/quotes__image.svg" alt="Icon: quote" class="quotes__image" />
+						<p class="quotes__text">
+							"I absolutely love the designs and styles that Ehya creates..They are so different and innovative. I have bought several times from the collections and what I love is that they really
+							are timeless pieces and the quality of the fabric is devine.... I look forward to seeing the new collections from season to season”
+						</p>
+						<span class="quotes__span"><span class="quotes__span_dah">- </span>Alicia Puma - <br class="quotes__span_br" />Fashun Customer</span>
+					</div>
+					<!-- /.quotes__item -->
+					<div class="swiper-slide quotes__item">
+						<img src="img/quotes__image.svg" alt="Icon: quote" class="quotes__image" />
+						<p class="quotes__text">
+							I am ipsum dolor sit amet consectetur adipisicing elit. Est blanditiis molestias repellendus dicta aut quaerat provident expedita dolores quae ad facilis illum reprehenderit
+							perspiciatis, asperiores totam alias nisi molestiae. Assumenda nihil debitis quam aspernatur sed vero natus!”
+						</p>
+						<span class="quotes__span"><span class="quotes__span_dah">- </span>Quibusdam Facilis - <br class="quotes__span_br" />Assumenda Dicta</span>
+					</div>
+					<!-- /.quotes__item -->
+				</div>
+				<!-- /.quotes__wrapper -->
+				<div class="swiper-pagination"></div>
+				<!-- ./swiper-pagination -->
+			</div>
+			<!-- /.quotes__container -->
+		</div>
+		<!-- /.quotes -->
 		<div class="newsletter">
 			<div class="container">
 				<div class="newsletter-wrapper">
@@ -451,6 +491,7 @@
 			<!-- /.container -->
 		</footer>
 		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/jquery.validate.min.js"></script>
 		<script src="js/mail.js"></script>
 	</body>

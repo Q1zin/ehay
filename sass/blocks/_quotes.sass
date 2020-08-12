@@ -1,0 +1,68 @@
+.quotes
+  margin-bottom: 80px
+  overflow-x: hidden
+  &__container
+    width: 800px
+    min-height: 389px
+    margin: auto
+    position: relative
+  &__wrapper
+    position: relative
+    width: 100%
+    height: 100%
+    z-index: 1
+    display: flex
+    transition-property: transform
+    box-sizing: content-box
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    visibility: hidden
+    transition: 0.1s
+    // transition-delay: 2s
+  &__image
+    width: 80px
+    margin: auto
+    margin-bottom: 24px
+  &__text
+    font-family: HK Grotesk
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 42px
+    text-align: center
+    letter-spacing: 0.133333px
+    color: #183B56
+    margin-top: 0
+    margin-bottom: 28px
+  &__span
+    font-family: HK Grotesk
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 24px
+    text-align: center
+    letter-spacing: 0.2px
+    color: #183B56
+    margin-bottom: 48px
+    &_dah
+      display: none
+    &_br
+      display: none
+.swiper-pagination-bullet
+  background: #B3BAC5
+  border-radius: 50%
+.swiper-pagination-bullet-active 
+  background: #183B56
+  border-radius: 50%
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0 8px
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+  position: relative
+  bottom: 0
+  top: 0
+  left: 0
+  right: 0
+.swiper-slide-active
+  visibility: visible
