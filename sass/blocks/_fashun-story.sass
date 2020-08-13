@@ -1,0 +1,121 @@
+.fashun-story
+  width: 1150px
+  display: flex
+  padding-top: 120px
+  margin: auto
+  margin-bottom: 140px
+  justify-content: space-between
+  border-top: 1px solid #E5EAF4
+  &__left
+    display: flex
+    flex-direction: column
+    align-items: start
+  &__hashtag
+    background: #D6E5DF
+    border-radius: 2000px
+    padding: 6px 16px
+    min-width: 88px
+    margin-bottom: 28px
+    &_text
+      font-family: Open Sans
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+      text-align: center
+      color: #36B37E
+  &__title
+    margin-top: 0
+    margin-bottom: 24px
+    font-family: HK Grotesk
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+    color: #183B56
+    max-width: 290px
+  &__text
+    margin-top: 0
+    margin-bottom: 42px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: #5A7184
+    width: 392px
+  &__button
+    &_wrapper
+      display: flex
+    &-next
+      border: 2px solid #183B56
+      border-radius: 50%
+      display: flex
+      justify-content: center
+      align-items: center
+      position: relative
+      padding: 20px
+      cursor: pointer
+      &_image
+        width: 14px
+    &-prev
+      border: 2px solid #183B56
+      border-radius: 50%
+      display: flex
+      justify-content: center
+      align-items: center
+      position: relative
+      padding: 20px
+      cursor: pointer
+      margin-right: 22px
+      &_image
+        width: 14px
+        transform: rotate(180deg)
+  &__right
+    overflow: hidden
+    width: 662px
+    margin-top: 10px
+    min-height: 475px
+  &__slide
+    display: flex
+.fashun-item
+  min-width: 322px
+  margin-right: 18px
+  &__image
+    width: 312px
+    height: 317px
+    display: block
+    object-fit: cover
+    border-radius: 8px 8px 0px 0px
+    z-index: 10
+  &__wrapper
+    display: flex
+    flex-direction: column
+    background-color: #FAFDFF
+    padding: 20px 32px 20px 20px
+    margin-top: -20px
+    margin-left: 10px
+    z-index: 20
+    position: relative
+    width: 312px
+  &__span
+    font-family: HK Grotesk
+    font-style: normal
+    font-weight: 600
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: #183B56
+    margin-bottom: 12px
+  &__link  
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: #1565D8
+    text-decoration: none
+
+.swiper-button-disabled
+  opacity: 0.5

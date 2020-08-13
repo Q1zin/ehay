@@ -31,7 +31,7 @@ $(document).ready(function () {
 		})
 	})
 
-	//Инициализация слайдера
+	//Инициализация слайдера #1
 	var swiper = new Swiper(".quotes__container", {
 		initialSlide: 1,
 		spaceBetween: 30,
@@ -43,6 +43,14 @@ $(document).ready(function () {
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
+		},
+	})
+
+	//Инициализация слайдера #2
+	var swiper = new Swiper(".fashun-story__right", {
+		navigation: {
+			nextEl: ".fashun-story__button-next",
+			prevEl: ".fashun-story__button-prev",
 		},
 	})
 })

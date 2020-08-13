@@ -45,5 +45,5 @@ try {
         $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
     }
 
-    header('Location: thanksyou.html');
+    header('Location: thankyou.html');
     exit;

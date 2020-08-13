@@ -52,9 +52,46 @@
       &__text
         margin-top: 0
         margin-bottom: 30px
+  .fashun-story
+    width: 960px
+    display: flex
+    flex-direction: column
+    padding-top: 80px
+    margin: auto
+    align-items: center
+    margin-bottom: 80px
+    &__left
+      align-items: center
+    &__hashtag
+      margin-bottom: 24px
+    &__title
+      margin-bottom: 16px
+      max-width: none
+    &__text
+      margin-bottom: 36px
+      width: 510px
+      text-align: center
+    &__button
+      &_wrapper
+        display: flex
+        margin-bottom: 36px
+    &__right
+      width: 682px
+      margin-top: 0
+      margin-left: 18px
+  .fashun-item
+    min-width: 332px
+    margin-right: 8px
+    &__image
+      width: 312px
+      height: 317px
+    &__wrapper
+      padding: 20px 42px 20px 20px 
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
+  .fashun-story
+    width: 728px
   .header
     padding-top: 26px
     padding-bottom: 18px
@@ -78,7 +115,7 @@
         height: 18px
         position: relative
         background-color: #fff
-        z-index: 70
+        z-index: 105
         & span,
         & span::before,
         & span::after
@@ -521,3 +558,74 @@
         display: inline-block
       &_br
         display: inline-block
+  .fashun-story
+    width: 320px
+    padding-top: 47px
+    margin-bottom: 64px
+    justify-content: center
+    &__right
+      margin-left: 0
+    &__hashtag
+      padding: 2px 12px
+      min-width: 80px
+      margin-bottom: 24px
+    &__title
+      margin-bottom: 16px
+      font-family: HK Grotesk
+      font-style: normal
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      letter-spacing: 0.2px
+      color: #183B56
+      max-width: 270px
+    &__text
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      color: #5A7184
+      width: 280px
+    &__button
+      &_wrapper
+        margin-bottom: 26px
+      &-next
+        padding: 17px
+        &_image
+          width: 13px
+      &-prev
+        padding: 17px
+        margin-right: 16px
+        &_image
+          width: 13px
+          transform: rotate(180deg)
+    &__right
+      overflow: hidden
+      width: 280px
+      margin-top: 0
+      min-height: none
+    &__slide
+      display: flex
+      flex-direction: column
+  .fashun-item
+    min-width: 280px
+    margin-right: 0
+    &__wrapper
+      width: 270px
+    &:nth-child(2n+1)
+      margin-bottom: 24px
+    &__image
+      width: 270px
+      height: 277px
+    &__wrapper
+      padding: 20px 
+      margin-top: -20px
+      margin-left: 10px
+      z-index: 20
+    &__span
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 16px

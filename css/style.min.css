@@ -386,7 +386,7 @@ body {
   padding-bottom: 36px;
   padding-left: 24px;
   padding-right: 24px;
-  z-index: 50;
+  z-index: 102;
   box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16);
 }
 
@@ -586,6 +586,7 @@ body {
   border: none;
   padding: 16px 24px;
   margin-bottom: 48px;
+  cursor: pointer;
 }
 
 .second-header__info {
@@ -1037,6 +1038,163 @@ body {
   visibility: visible;
 }
 
+.fashun-story {
+  width: 1150px;
+  display: flex;
+  padding-top: 120px;
+  margin: auto;
+  margin-bottom: 140px;
+  justify-content: space-between;
+  border-top: 1px solid #E5EAF4;
+}
+
+.fashun-story__left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.fashun-story__hashtag {
+  background: #D6E5DF;
+  border-radius: 2000px;
+  padding: 6px 16px;
+  min-width: 88px;
+  margin-bottom: 28px;
+}
+
+.fashun-story__hashtag_text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #36B37E;
+}
+
+.fashun-story__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  max-width: 290px;
+}
+
+.fashun-story__text {
+  margin-top: 0;
+  margin-bottom: 42px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+  width: 392px;
+}
+
+.fashun-story__button_wrapper {
+  display: flex;
+}
+
+.fashun-story__button-next {
+  border: 2px solid #183B56;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.fashun-story__button-next_image {
+  width: 14px;
+}
+
+.fashun-story__button-prev {
+  border: 2px solid #183B56;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  cursor: pointer;
+  margin-right: 22px;
+}
+
+.fashun-story__button-prev_image {
+  width: 14px;
+  transform: rotate(180deg);
+}
+
+.fashun-story__right {
+  overflow: hidden;
+  width: 662px;
+  margin-top: 10px;
+  min-height: 475px;
+}
+
+.fashun-story__slide {
+  display: flex;
+}
+
+.fashun-item {
+  min-width: 322px;
+  margin-right: 18px;
+}
+
+.fashun-item__image {
+  width: 312px;
+  height: 317px;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+  z-index: 10;
+}
+
+.fashun-item__wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFDFF;
+  padding: 20px 32px 20px 20px;
+  margin-top: -20px;
+  margin-left: 10px;
+  z-index: 20;
+  position: relative;
+  width: 312px;
+}
+
+.fashun-item__span {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin-bottom: 12px;
+}
+
+.fashun-item__link {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1565D8;
+  text-decoration: none;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+
 .newsletter {
   padding: 100px 0;
   background: url(../img/background-newsletter.jpg) no-repeat;
@@ -1383,11 +1541,58 @@ body {
     margin-top: 0;
     margin-bottom: 30px;
   }
+  .fashun-story {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .fashun-story__left {
+    align-items: center;
+  }
+  .fashun-story__hashtag {
+    margin-bottom: 24px;
+  }
+  .fashun-story__title {
+    margin-bottom: 16px;
+    max-width: none;
+  }
+  .fashun-story__text {
+    margin-bottom: 36px;
+    width: 510px;
+    text-align: center;
+  }
+  .fashun-story__button_wrapper {
+    display: flex;
+    margin-bottom: 36px;
+  }
+  .fashun-story__right {
+    width: 682px;
+    margin-top: 0;
+    margin-left: 18px;
+  }
+  .fashun-item {
+    min-width: 332px;
+    margin-right: 8px;
+  }
+  .fashun-item__image {
+    width: 312px;
+    height: 317px;
+  }
+  .fashun-item__wrapper {
+    padding: 20px 42px 20px 20px;
+  }
 }
 
 @media (max-width: 992px) {
   .container, .newsletter-wrapper {
     max-width: 700px;
+  }
+  .fashun-story {
+    width: 728px;
   }
   .header {
     padding-top: 26px;
@@ -1417,7 +1622,7 @@ body {
     height: 18px;
     position: relative;
     background-color: #fff;
-    z-index: 70;
+    z-index: 105;
   }
   .header__menu-block span,
   .header__menu-block span::before,
@@ -1981,6 +2186,94 @@ body {
   }
   .quotes__span_br {
     display: inline-block;
+  }
+  .fashun-story {
+    width: 320px;
+    padding-top: 47px;
+    margin-bottom: 64px;
+    justify-content: center;
+  }
+  .fashun-story__right {
+    margin-left: 0;
+  }
+  .fashun-story__hashtag {
+    padding: 2px 12px;
+    min-width: 80px;
+    margin-bottom: 24px;
+  }
+  .fashun-story__title {
+    margin-bottom: 16px;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #183B56;
+    max-width: 270px;
+  }
+  .fashun-story__text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #5A7184;
+    width: 280px;
+  }
+  .fashun-story__button_wrapper {
+    margin-bottom: 26px;
+  }
+  .fashun-story__button-next {
+    padding: 17px;
+  }
+  .fashun-story__button-next_image {
+    width: 13px;
+  }
+  .fashun-story__button-prev {
+    padding: 17px;
+    margin-right: 16px;
+  }
+  .fashun-story__button-prev_image {
+    width: 13px;
+    transform: rotate(180deg);
+  }
+  .fashun-story__right {
+    overflow: hidden;
+    width: 280px;
+    margin-top: 0;
+    min-height: none;
+  }
+  .fashun-story__slide {
+    display: flex;
+    flex-direction: column;
+  }
+  .fashun-item {
+    min-width: 280px;
+    margin-right: 0;
+  }
+  .fashun-item__wrapper {
+    width: 270px;
+  }
+  .fashun-item:nth-child(2n+1) {
+    margin-bottom: 24px;
+  }
+  .fashun-item__image {
+    width: 270px;
+    height: 277px;
+  }
+  .fashun-item__wrapper {
+    padding: 20px;
+    margin-top: -20px;
+    margin-left: 10px;
+    z-index: 20;
+  }
+  .fashun-item__span {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
   }
 }
 /*# sourceMappingURL=style.min.css.map */
