@@ -39,7 +39,15 @@
     font-weight: 600
     font-size: 16px
     line-height: 22px
-    color: #959EAD
+    color: black
+    &[type="email"]::-webkit-input-placeholder 
+      color: #959EAD
+    &[type="email"]:-ms-input-placeholder 
+      color: #959EAD
+    &[type="email"]::-ms-input-placeholder 
+      color: #959EAD
+    &[type="email"]::placeholder 
+      color: #959EAD
   &__button
     position: absolute
     min-height: 48px
